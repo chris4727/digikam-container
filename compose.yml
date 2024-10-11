@@ -7,10 +7,9 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - SUBFOLDER=/ #optional
     volumes:
-      - /path/to/config:/config
+      - ./config:/config
+      - ${media}/Photos:/photos
     ports:
       - 3000:3000 #optional
-      - 3001:3001 #optional
-    restart: unless-stopped
+    #restart: unless-stopped
