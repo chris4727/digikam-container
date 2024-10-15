@@ -9,7 +9,7 @@ services:
       - TZ=Etc/Los_Angeles
     volumes:
       - ./config:/config
-      - ${media}/Photos:/photos
+      - ${MEDIA}/Photos:/Photos
     ports:
       - 3000:3000 #optional
     #restart: unless-stopped
